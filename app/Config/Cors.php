@@ -102,4 +102,12 @@ class Cors extends BaseConfig
          */
         'maxAge' => 7200,
     ];
+    public array $api  = [
+        'allowedOrigins' => ['http://localhost:8080'],
+        'allowedOriginsPatterns' => [],
+        'supportsCredentials' => false,
+        'allowedHeaders' => ['Content-Type', 'X-Requested-With', 'Authorization'],
+        'exposedHeaders' => [],
+        'allowedMethods' => ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    ];
 }
